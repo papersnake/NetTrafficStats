@@ -1,0 +1,242 @@
+android.support.v4.app.ActivityCompatHoneycomb:
+    34:35:static void dump(android.app.Activity,java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+android.support.v4.app.BackStackRecord:
+    static final java.lang.String TAG
+    static final int OP_NULL
+    static final int OP_ADD
+    static final int OP_REPLACE
+    static final int OP_REMOVE
+    static final int OP_HIDE
+    static final int OP_SHOW
+    267:267:public int getId()
+    271:271:public int getBreadCrumbTitleRes()
+    275:275:public int getBreadCrumbShortTitleRes()
+    279:282:public java.lang.CharSequence getBreadCrumbTitle()
+    286:289:public java.lang.CharSequence getBreadCrumbShortTitle()
+    306:307:public android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    311:312:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    316:317:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    321:349:private void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int)
+    352:352:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    356:361:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    365:375:public android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    379:388:public android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    392:401:public android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    405:407:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    411:412:public android.support.v4.app.FragmentTransaction setTransition(int)
+    416:417:public android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    421:427:public android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    431:431:public boolean isAddToBackStackAllowed()
+    435:440:public android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    444:446:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    450:452:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    456:458:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    462:464:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    491:491:public int commit()
+    495:495:public int commitAllowingStateLoss()
+    499:508:int commitInternal(boolean)
+    654:654:public int getTransition()
+    658:658:public int getTransitionStyle()
+    662:662:public boolean isEmpty()
+android.support.v4.app.DialogFragment
+android.support.v4.app.Fragment:
+    static final int INITIALIZING
+    static final int CREATED
+    static final int ACTIVITY_CREATED
+    static final int STARTED
+    static final int RESUMED
+    403:403:public final int getId()
+    410:410:public final java.lang.String getTag()
+    421:425:public void setArguments(android.os.Bundle)
+    432:432:public final android.os.Bundle getArguments()
+    447:449:public void setTargetFragment(android.support.v4.app.Fragment,int)
+    455:455:public final android.support.v4.app.Fragment getTargetFragment()
+    462:462:public final int getTargetRequestCode()
+    476:479:public final android.content.res.Resources getResources()
+    489:489:public final java.lang.CharSequence getText(int)
+    499:499:public final java.lang.String getString(int)
+    512:512:public final java.lang.String getString(int,java.lang.Object[])
+    523:523:public final android.support.v4.app.FragmentManager getFragmentManager()
+    530:530:public final boolean isAdded()
+    539:539:public final boolean isRemoving()
+    550:550:public final boolean isInLayout()
+    558:558:public final boolean isResumed()
+    567:567:public final boolean isVisible()
+    579:579:public final boolean isHidden()
+    607:608:public void setRetainInstance(boolean)
+    611:611:public final boolean getRetainInstance()
+    622:628:public void setHasOptionsMenu(boolean)
+    634:642:public android.support.v4.app.LoaderManager getLoaderManager()
+    650:654:public void startActivity(android.content.Intent)
+    661:665:public void startActivityForResult(android.content.Intent,int)
+    787:787:public android.view.View getView()
+    1030:1031:public void registerForContextMenu(android.view.View)
+    1041:1042:public void unregisterForContextMenu(android.view.View)
+android.support.v4.app.FragmentActivity:
+    private static final java.lang.String TAG
+    private static final java.lang.String FRAGMENTS_TAG
+    private static final int HONEYCOMB
+    static final int MSG_REALLY_STOPPED
+    549:570:public void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    617:617:public android.support.v4.app.FragmentManager getSupportFragmentManager()
+    637:645:public void startActivityFromFragment(android.support.v4.app.Fragment,android.content.Intent,int)
+android.support.v4.app.FragmentActivity$FragmentTag:
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+android.support.v4.app.FragmentManager:
+    public static final int POP_BACK_STACK_INCLUSIVE
+    public abstract android.support.v4.app.FragmentTransaction beginTransaction()
+    125:125:public android.support.v4.app.FragmentTransaction openTransaction()
+    public abstract boolean executePendingTransactions()
+    public abstract android.support.v4.app.Fragment findFragmentById(int)
+    public abstract android.support.v4.app.Fragment findFragmentByTag(java.lang.String)
+    public abstract void popBackStack()
+    public abstract boolean popBackStackImmediate()
+    public abstract void popBackStack(java.lang.String,int)
+    public abstract boolean popBackStackImmediate(java.lang.String,int)
+    public abstract void popBackStack(int,int)
+    public abstract boolean popBackStackImmediate(int,int)
+    public abstract int getBackStackEntryCount()
+    public abstract android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public abstract void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    296:297:public static void enableDebugLogging(boolean)
+android.support.v4.app.FragmentManager$BackStackEntry
+android.support.v4.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    386:386:public android.support.v4.app.FragmentTransaction beginTransaction()
+    396:401:public void popBackStack()
+    412:417:public void popBackStack(java.lang.String,int)
+    421:423:public boolean popBackStackImmediate(java.lang.String,int)
+    428:436:public void popBackStack(int,int)
+    440:445:public boolean popBackStackImmediate(int,int)
+    450:450:public int getBackStackEntryCount()
+    455:455:public android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    460:464:public void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    468:471:public void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    1089:1097:public android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+    1112:1128:public void enqueueAction(java.lang.Runnable,boolean)
+    1131:1147:public int allocBackStackIndex(android.support.v4.app.BackStackRecord)
+android.support.v4.app.FragmentManagerImpl$2
+android.support.v4.app.FragmentManagerImpl$3
+android.support.v4.app.FragmentManagerImpl$4
+android.support.v4.app.FragmentTransaction:
+    public static final int TRANSIT_ENTER_MASK
+    public static final int TRANSIT_EXIT_MASK
+    public static final int TRANSIT_UNSET
+    public static final int TRANSIT_NONE
+    public static final int TRANSIT_FRAGMENT_OPEN
+    public static final int TRANSIT_FRAGMENT_CLOSE
+    public static final int TRANSIT_FRAGMENT_FADE
+    public abstract android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public abstract boolean isEmpty()
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public abstract android.support.v4.app.FragmentTransaction setTransition(int)
+    public abstract android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public abstract android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public abstract boolean isAddToBackStackAllowed()
+    public abstract android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    public abstract int commit()
+    public abstract int commitAllowingStateLoss()
+android.support.v4.app.HCSparseArray:
+    224:229:public void setValueAt(int,java.lang.Object)
+    237:241:public int indexOfKey(int)
+    253:261:public int indexOfValue(java.lang.Object)
+    284:311:public void append(int,java.lang.Object)
+    334:343:private void checkIntegrity()
+android.support.v4.app.ListFragment
+android.support.v4.app.ListFragment$1
+android.support.v4.app.ListFragment$2
+android.support.v4.app.LoaderManager:
+    public abstract android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract void destroyLoader(int)
+    public abstract android.support.v4.content.Loader getLoader(int)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    176:177:public static void enableDebugLogging(boolean)
+android.support.v4.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+    boolean mRetainingStarted
+    566:620:public android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    631:648:public void destroyLoader(int)
+    656:667:public android.support.v4.content.Loader getLoader(int)
+android.support.v4.content.AsyncTaskLoader:
+    static final java.lang.String TAG
+    static final boolean DEBUG
+    257:265:public void waitForLoader()
+android.support.v4.content.AsyncTaskLoader$LoadTask:
+    41:41:static java.util.concurrent.CountDownLatch access$000(android.support.v4.content.AsyncTaskLoader$LoadTask)
+android.support.v4.content.CursorLoader
+android.support.v4.content.Loader:
+    96:96:public android.content.Context getContext()
+    103:103:public int getId()
+    246:248:public void abandon()
+    260:260:protected void onAbandon()
+    297:299:public boolean takeContentChanged()
+android.support.v4.util.LruCache
+android.support.v4.util.TimeUtils:
+    public static final int HUNDRED_DAY_FIELD_LEN
+    private static final int SECONDS_PER_MINUTE
+    private static final int SECONDS_PER_HOUR
+    private static final int SECONDS_PER_DAY
+    145:149:public static void formatDuration(long,java.lang.StringBuilder)
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuCompat$MenuVersionImpl
+android.support.v4.view.MenuCompatHoneycomb
+android.support.v4.widget.CursorAdapter
+android.support.v4.widget.CursorAdapter$1
+android.support.v4.widget.CursorAdapter$ChangeObserver
+android.support.v4.widget.CursorAdapter$MyDataSetObserver
+android.support.v4.widget.CursorFilter
+android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.ResourceCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+com.orderlong.netTrafficStats.AppInfoItem:
+    private java.lang.String packagename
+    38:38:public java.lang.String getPackageName()
+    43:44:public void setPackageName(java.lang.String)
+    58:58:public long getRxBytes()
+    69:69:public long getTxBytes()
+com.orderlong.netTrafficStats.NetTraffic:
+    public static final int UNSUPPORTED
+    public static native long getMobileTxPackets()
+    public static native long getMobileRxPackets()
+    public static native long getMobileTxBytes()
+    public static native long getMobileRxBytes()
+    public static native long getTotalTxPackets()
+    public static native long getTotalRxPackets()
+    public static native long getTotalTxBytes()
+com.orderlong.netTrafficStats.NetTrafficStats:
+    public static final java.lang.String tag
+com.orderlong.netTrafficStats.R
+com.orderlong.netTrafficStats.R$attr
+com.orderlong.netTrafficStats.R$drawable
+com.orderlong.netTrafficStats.R$id
+com.orderlong.netTrafficStats.R$layout
+com.orderlong.netTrafficStats.R$menu
+com.orderlong.netTrafficStats.R$string
+com.orderlong.netTrafficStats.TaskManager:
+    protected static final int MSG_BYTES_CHANGED
+    62:63:public void unregisterContentObserver()
+com.orderlong.netTrafficStats.TaskManager$MyFileObserver

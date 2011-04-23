@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/fmapplist"  android:layout_width="match_parent" android:layout_height="match_parent"/>
+	<SlidingDrawer android:id="@+id/drawer"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:bottomOffset="7dip" android:handle="@+id/handle"
+		android:content="@+id/content">
+		<LinearLayout android:id="@id/handle" android:background="@drawable/handle"
+			android:layout_width="fill_parent" android:orientation="vertical"
+			android:layout_height="wrap_content" android:gravity="center">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/icon"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@id/content"
+			android:background="@drawable/gradient_orange" android:layout_width="fill_parent"
+			android:orientation="vertical" android:layout_height="wrap_content"
+			>
+		<LinearLayout android:id="@+id/fmappinfo" android:layout_width="match_parent" android:layout_height="wrap_content" />
+		</LinearLayout>
+	</SlidingDrawer>
+</RelativeLayout>

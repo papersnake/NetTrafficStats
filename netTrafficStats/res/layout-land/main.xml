@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/fmapplist"  android:layout_width="match_parent" android:layout_height="match_parent"/>
+	<SlidingDrawer android:id="@+id/drawer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:handle="@+id/handle" android:content="@+id/content"
+		android:orientation="horizontal">
+		<RelativeLayout android:id="@id/handle"
+			android:layout_width="49dip" android:background="@null"
+			android:layout_height="125dip">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/handle"
+				android:layout_height="wrap_content" android:id="@+id/handle_bg"
+				android:layout_alignParentTop="true" />
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/icon"
+				android:layout_height="wrap_content" android:layout_alignParentTop="true"
+				android:layout_marginTop="17dip" android:layout_marginLeft="22dip" />
+		</RelativeLayout>
+		<LinearLayout android:id="@id/content"
+			android:background="@drawable/gradient_orange" android:layout_width="fill_parent"
+			android:orientation="vertical" android:layout_height="wrap_content"
+			android:paddingLeft="20dip"
+			android:paddingRight="20dip">
+		<LinearLayout android:id="@+id/fmappinfo" android:layout_width="match_parent" android:layout_height="wrap_content" />
+		</LinearLayout>
+	</SlidingDrawer>
+</RelativeLayout>

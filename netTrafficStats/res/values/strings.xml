@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">程序流量统计</string>
+    <string name="receivedbytes">已接收%1$s</string>
+    <string name="sendedbytes">已发送%1$s</string>
+    <string name="about">关于</string>
+    <string name="about_content">
+    程序流量统计\r\n\r\n
+    
+    版本：0.9.1\r\n
+    编译时间：2011.4.15\r\n\r\n
+    
+    作者：papersnake\r\n
+    Email:cctv5cn@gmail.com\r\n
+    </string>
+</resources>
