@@ -118,7 +118,6 @@ public class AppInfoItem implements Comparable<AppInfoItem>{
 		{
 			double result=(double)bytes/1048576;
 			return String.format("%.2fM", result);
-			//return "0K";
 		} else if (bytes>0)
 		{
 			double result=(double)bytes/1024;
