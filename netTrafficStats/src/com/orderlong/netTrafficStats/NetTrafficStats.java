@@ -53,16 +53,6 @@ public class NetTrafficStats extends FragmentActivity
 
 		AppListFragment appList = new AppListFragment();
 		fm.beginTransaction().add(R.id.fmapplist, appList).commit();
-
-		/*
-		appList.setItemSelectedListener(new ItemSelectedListener() {
-
-			public void onItemSelected(AppInfoItem item) {
-				fmInfo.loadData(item);
-
-			}
-
-		});*/
 		}
 
 
