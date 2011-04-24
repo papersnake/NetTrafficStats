@@ -10,7 +10,7 @@
 		<LinearLayout android:id="@id/handle" android:background="@drawable/handle"
 			android:layout_width="fill_parent" android:orientation="vertical"
 			android:layout_height="wrap_content" android:gravity="center">
-			<ImageView android:layout_width="wrap_content" android:src="@drawable/icon"
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/drag"
 				android:layout_height="wrap_content" />
 		</LinearLayout>
 		<LinearLayout android:id="@id/content"

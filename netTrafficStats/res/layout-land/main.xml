@@ -13,7 +13,7 @@
 			<ImageView android:layout_width="wrap_content" android:src="@drawable/handle"
 				android:layout_height="wrap_content" android:id="@+id/handle_bg"
 				android:layout_alignParentTop="true" />
-			<ImageView android:layout_width="wrap_content" android:src="@drawable/icon"
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/drag"
 				android:layout_height="wrap_content" android:layout_alignParentTop="true"
 				android:layout_marginTop="17dip" android:layout_marginLeft="22dip" />
 		</RelativeLayout>

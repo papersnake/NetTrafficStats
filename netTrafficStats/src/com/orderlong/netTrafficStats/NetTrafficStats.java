@@ -1,5 +1,6 @@
 package com.orderlong.netTrafficStats;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.app.AlertDialog;
@@ -199,6 +200,7 @@ public class NetTrafficStats extends FragmentActivity
 		private ImageView imgAppIcon;
 		private TextView txtRxBytes;
 		private TextView txtTxBytes;
+		private TextView txtmoreapp;
 
 		private AppInfoItem appItem;
 		
@@ -224,12 +226,21 @@ public class NetTrafficStats extends FragmentActivity
 			imgAppIcon=(ImageView)v.findViewById(R.id.appinfo_icon);
 			txtRxBytes=(TextView)v.findViewById(R.id.txt_rxbytes);
 			txtTxBytes=(TextView)v.findViewById(R.id.txt_txbytes);
+			txtmoreapp=(TextView)v.findViewById(R.id.moreapp);
 			if(this.appItem!=null)
 			{
 				txtAppName.setText(appItem.getName());
 				imgAppIcon.setImageDrawable(appItem.getIcon());
 				txtRxBytes.setText("已接收:"+appItem.getRxBytesFormat());
 				txtTxBytes.setText("已发送:"+appItem.getTxBytesFormat());
+				if(appItem.getSubItem().size()>0)
+				{
+					ArrayList<AppInfoItem> moreapp=(ArrayList<AppInfoItem>) appItem.getSubItem();
+					for(AppInfoItem subItem :moreapp)
+					{
+						txtmoreapp.append(subItem.getName()+"\n");
+					}
+				}
 			}
 			return v;
 		}

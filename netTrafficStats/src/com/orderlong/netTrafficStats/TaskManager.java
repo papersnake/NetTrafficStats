@@ -110,11 +110,11 @@ public class TaskManager {
 						{
 							//item.setName(item.getName()+" | "+info.loadLabel(packageManager).toString());
 							AppInfoItem subitem=new AppInfoItem();
-							item.setIcon(info.loadIcon(context.getPackageManager()));
-							item.setName(info
+							subitem.setIcon(info.loadIcon(context.getPackageManager()));
+							subitem.setName(info
 									.loadLabel(context.getPackageManager())
 									.toString());
-							item.setUid(info.uid);
+							subitem.setUid(info.uid);
 							item.addSubItems(subitem);
 						}
 						else
