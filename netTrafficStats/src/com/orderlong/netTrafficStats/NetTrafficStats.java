@@ -12,18 +12,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
 import android.support.v4.app.LoaderManager;
-import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.Loader;
 import android.util.Log;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -84,7 +80,7 @@ public class NetTrafficStats extends FragmentActivity
 
 
 	private void showAbout() {
-		AlertDialog builder=new AlertDialog.Builder(this).setIcon(R.drawable.about).setTitle(R.string.about).setMessage(R.string.about_content).show();
+		new AlertDialog.Builder(this).setIcon(R.drawable.about).setTitle(R.string.about).setMessage(R.string.about_content).show();
 		
 	}
 
