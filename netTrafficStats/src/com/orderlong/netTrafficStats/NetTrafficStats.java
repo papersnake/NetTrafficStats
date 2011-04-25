@@ -96,7 +96,7 @@ public class NetTrafficStats extends FragmentActivity
 
 
 	private void showAbout() {
-		AlertDialog builder=new AlertDialog.Builder(this).setIcon(R.drawable.about).setTitle(R.string.about).setMessage(R.string.about_content).show();
+		new AlertDialog.Builder(this).setIcon(R.drawable.about).setTitle(R.string.about).setMessage(R.string.about_content).show();
 		
 	}
 
