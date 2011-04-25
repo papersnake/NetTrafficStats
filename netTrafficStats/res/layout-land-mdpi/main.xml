@@ -17,6 +17,7 @@
 				android:layout_height="wrap_content" android:layout_alignParentTop="true"
 				android:layout_marginTop="17dip" android:layout_marginLeft="22dip" />
 		</RelativeLayout>
+		
 		<LinearLayout android:id="@id/content"
 			android:background="@drawable/gradient_orange" android:layout_width="fill_parent"
 			android:orientation="vertical" android:layout_height="wrap_content"
