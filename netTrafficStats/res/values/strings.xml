@@ -14,4 +14,8 @@
     Email:cctv5cn@gmail.com\r\n
     </string>
     <string name="appinfo_labmoreapp">同UID程序详细信息</string>
+    <string name="togglewifion">WIFI已禁用</string>
+    <string name="togglewifioff">禁用wifi</string>
+    <string name="toggle3gon">移动网络已禁用</string>
+    <string name="toggle3goff">禁用移动网络</string>
 </resources>

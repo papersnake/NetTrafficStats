@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:layout_width="match_parent" android:layout_height="match_parent"> 
-	<LinearLayout android:layout_height="match_parent" android:orientation="horizontal" 
-	android:id="@+id/header" android:layout_width="match_parent" android:paddingTop="8dip" 
-	android:paddingLeft="8dip"> <ImageView android:src="@drawable/icon" android:id="@+id/appinfo_icon" 
-	android:layout_width="60px" android:layout_height="60px"></ImageView> <TableLayout 
-	android:id="@+id/tableLayout1" android:layout_height="match_parent" android:layout_width="match_parent"> 
-	<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" 
-	android:layout_height="wrap_content"> <TextView android:text="TextView" android:layout_height="wrap_content" 
-	android:id="@+id/appinfo_name" android:layout_width="wrap_content" android:textSize="24dip" 
-	android:textStyle="bold"></TextView> </TableRow> <TableRow android:id="@+id/tableRow2" 
-	android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow> 
-	</TableLayout> </LinearLayout> </LinearLayout> -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:orientation="vertical">
@@ -37,8 +24,6 @@
 	</RelativeLayout>
 	<RelativeLayout android:layout_width="fill_parent"
 		android:layout_height="185dip" android:padding="15dip">
-
-
 		<TextView android:layout_width="wrap_content"
 			android:layout_alignParentTop="true" android:layout_height="wrap_content"
 			android:id="@+id/txt_label" android:text="@string/appinfo_labmoreapp"
@@ -46,5 +31,25 @@
 		<TextView android:id="@+id/moreapp" android:text="" android:layout_below="@id/txt_label"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:layout_centerInParent="true"  />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingLeft="40dip" android:paddingRight="40dip">
+	<ToggleButton android:text="wifi" 
+		android:textOn="@string/togglewifion" 
+		android:textOff="@string/togglewifioff"
+		android:id="@+id/btnwifiswitch" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		></ToggleButton>
+	<ToggleButton 
+		android:id="@+id/btn3gswitch" 
+		android:textOn="@string/toggle3gon" 
+		android:textOff="@string/toggle3goff"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		>
+	</ToggleButton>
 	</RelativeLayout>
 </LinearLayout>
