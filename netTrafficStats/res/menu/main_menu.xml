@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/about" android:id="@+id/menu_about" android:icon="@drawable/about"></item>
+    
+    <item android:title="@string/menu_apply" android:id="@+id/menu_apply" android:icon="@android:drawable/ic_menu_agenda"></item>   
+    <item android:id="@+id/menu_disable" android:title="@string/menu_fw_disable" android:icon="@android:drawable/button_onoff_indicator_off"></item>
+    <item android:id="@+id/menu_showrules" android:title="@string/menu_showrules" android:icon="@android:drawable/ic_menu_view"></item>
+    <item android:title="@string/about" android:icon="@android:drawable/ic_menu_info_details" android:id="@+id/menu_about"></item>
 </menu>

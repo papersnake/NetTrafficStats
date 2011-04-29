@@ -38,18 +38,14 @@
 		android:textOn="@string/togglewifion" 
 		android:textOff="@string/togglewifioff"
 		android:id="@+id/btnwifiswitch" 
-		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		></ToggleButton>
+		android:layout_alignParentLeft="true" android:layout_width="105dip"></ToggleButton>
 	<ToggleButton 
 		android:id="@+id/btn3gswitch" 
 		android:textOn="@string/toggle3gon" 
 		android:textOff="@string/toggle3goff"
-		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content"
-		android:layout_alignParentRight="true"
-		>
+		android:layout_alignParentRight="true" android:layout_width="105dip">
 	</ToggleButton>
 	</RelativeLayout>
 </LinearLayout>

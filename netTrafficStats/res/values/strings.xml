@@ -7,15 +7,37 @@
     <string name="about_content">
     程序流量统计\r\n\r\n
     
-    版本：0.9.2\r\n
-    编译时间：2011.4.24\r\n\r\n
+    版本：1.0.2beta1\r\n
+    编译时间：2011.4.29\r\n\r\n
     
     作者：papersnake\r\n
     Email:cctv5cn@gmail.com\r\n
     </string>
     <string name="appinfo_labmoreapp">同UID程序详细信息</string>
-    <string name="togglewifion">WIFI已禁用</string>
-    <string name="togglewifioff">禁用wifi</string>
-    <string name="toggle3gon">移动网络已禁用</string>
-    <string name="toggle3goff">禁用移动网络</string>
+    <string name="togglewifion">已禁用\nWIFI</string>
+    <string name="togglewifioff">禁用\nWIFI</string>
+    <string name="toggle3gon">已禁用\n3G/GPRS</string>
+    <string name="toggle3goff">禁用\n3G/GPRS</string>
+    
+    <string name="toast_bin_installed">DroidWall: 二进制文件已安装!</string>
+    
+    <string name="menu_apply">应用规则</string>
+    <string name="menu_fw_disable">防火墙已禁用</string>
+    <string name="menu_fw_enable">防火墙已启用</string>
+    <string name="menu_showrules">显示规则</string>
+    
+    
+    <string name="log_was_enabled">日志已启用</string>
+    <string name="log_was_disabled">日专已禁用</string>
+    
+    <string name="working">正在执行...</string>
+    <string name="applyrules">应用防火墙规则</string>
+    <string name="rulesapplied">防火墙规则应用成功</string>
+    <string name="deletingrules">正在清除规则</string>
+    <string name="rulesdeleted">清除所有防火墙规则</string>
+    <string name="notrooted">
+    没有Root权限。\n
+    您的手机必须Rooted才能运行本软件的防火墙功能 \n\n
+    
+    </string>
 </resources>
