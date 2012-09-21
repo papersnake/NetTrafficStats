@@ -10,12 +10,12 @@ public class AsyncAppInfoLoader extends AsyncTaskLoader<List<AppInfoItem>>
 {
 	final Loader<List<AppInfoItem>>.ForceLoadContentObserver mObserver;
 	TaskManager taskManager;
-	private Context mContext;
+	//private Context mContext;
 	List<AppInfoItem> mData;
 	
 	public AsyncAppInfoLoader(Context context) {
 		super(context);
-		mContext=context;
+		//mContext=context;
 		//taskManager=new TaskManager(context);
 		taskManager=TaskManager.getInstance(context);
 		this.mObserver=new Loader.ForceLoadContentObserver();

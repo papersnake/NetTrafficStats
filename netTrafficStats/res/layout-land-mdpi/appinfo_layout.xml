@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="horizontal">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" android:layout_width="300dip">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="64dip" android:padding="6dip">
+			<ImageView android:src="@drawable/icon" android:id="@+id/appinfo_icon"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentBottom="true" android:layout_marginRight="6dip">
+			</ImageView>
+			<TextView android:layout_height="wrap_content" android:id="@+id/appinfo_name"
+				android:layout_width="fill_parent" android:textSize="24dip"
+				android:textStyle="bold" android:layout_toRightOf="@id/appinfo_icon"
+				android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+				android:layout_alignWithParentIfMissing="true" android:gravity="center_vertical"></TextView>
+	
+			<TextView android:id="@+id/txt_rxbytes" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text=""
+				android:layout_alignParentBottom="true" android:layout_toRightOf="@id/appinfo_icon" />
+			<TextView android:id="@+id/txt_txbytes" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_toRightOf="@id/txt_rxbytes"
+				android:layout_alignParentBottom="true" android:text="" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:padding="15dip" android:layout_height="fill_parent">
+			<TextView android:layout_width="wrap_content"
+				android:layout_alignParentTop="true" android:layout_height="wrap_content"
+				android:id="@+id/txt_label" android:text="@string/appinfo_labmoreapp"
+				android:textSize="19dip" android:typeface="normal"></TextView>
+			<TextView android:id="@+id/moreapp" android:text="" android:layout_below="@id/txt_label"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerInParent="true"  />
+		</RelativeLayout>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="115dip" android:layout_weight="1"
+		android:layout_height="fill_parent" android:paddingTop="30dip" android:paddingBottom="30dip" android:gravity="center_horizontal">
+	<ToggleButton android:text="wifi" 
+		android:textOn="@string/togglewifion" 
+		android:textOff="@string/togglewifioff"
+		android:id="@+id/btnwifiswitch" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_width="85dip"></ToggleButton>
+	<ToggleButton 
+		android:id="@+id/btn3gswitch" 
+		android:textOn="@string/toggle3gon" 
+		android:textOff="@string/toggle3goff"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:layout_width="85dip">
+	</ToggleButton>
+	</RelativeLayout>
+</LinearLayout>

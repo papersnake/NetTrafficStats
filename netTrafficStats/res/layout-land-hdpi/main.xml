@@ -7,16 +7,18 @@
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		android:handle="@+id/handle" android:content="@+id/content"
 		android:orientation="horizontal">
-		<RelativeLayout android:id="@id/handle"
-			android:layout_width="49dip" android:background="@null"
-			android:layout_height="125dip">
-			<ImageView android:layout_width="wrap_content" android:src="@drawable/handle"
-				android:layout_height="wrap_content" android:id="@+id/handle_bg"
-				android:layout_alignParentTop="true" />
-			<ImageView android:layout_width="wrap_content" android:src="@drawable/drag"
-				android:layout_height="wrap_content" android:layout_alignParentTop="true"
-				android:layout_marginTop="17dip" android:layout_marginLeft="22dip" />
-		</RelativeLayout>
+		<LinearLayout android:id="@id/handle" android:background="@drawable/handle"
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:layout_height="fill_parent" android:gravity="center">
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:orientation="vertical" android:layout_height="wrap_content">
+				<ImageView android:layout_width="wrap_content"
+					android:src="@drawable/drag" android:layout_height="wrap_content"
+					android:paddingLeft="12dip" android:paddingBottom="24dip" />
+			</LinearLayout>
+		</LinearLayout>
+
 		<LinearLayout android:id="@id/content"
 			android:background="@drawable/gradient_orange" android:layout_width="fill_parent"
 			android:orientation="vertical" android:layout_height="wrap_content"

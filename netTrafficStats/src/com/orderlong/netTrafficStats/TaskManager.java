@@ -1,19 +1,14 @@
 package com.orderlong.netTrafficStats;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.ResolveInfo;
 import android.database.ContentObservable;
 import android.database.ContentObserver;
-import android.os.FileObserver;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
